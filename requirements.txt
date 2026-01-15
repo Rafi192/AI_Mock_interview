@@ -1,0 +1,5 @@
+opencv-python
+nltk
+flask
+flask-cors
+FFmpeg-python
