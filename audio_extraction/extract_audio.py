@@ -1,9 +1,14 @@
 import subprocess
 import os
 
+
 def extract_audio(video_path, audio_path):
     os.makedirs(os.path.dirname(audio_path), exist_ok=True)
 
+
+def extract_audio(video_path, audio_path):
+    os.makedirs(os.path.dirname(audio_path), exist_ok=True)
+    
     cmd = [
         'ffmpeg',
         '-i',
@@ -16,5 +21,6 @@ def extract_audio(video_path, audio_path):
         '-ac', '1',
         audio_path
     ]
+
 
     subprocess.run(cmd, check=True)
